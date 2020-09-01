@@ -1,10 +1,75 @@
 <resources>
-    <!-- Base application theme. -->
+
     <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
-        <!-- Customize your theme here. -->
-        <item name="colorPrimary">@color/colorPrimary</item>
-        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
-        <item name="colorAccent">@color/colorAccent</item>
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimaryDark">@color/primaryDark</item>
+        <item name="colorOnPrimary">@color/primaryDark</item>
+        <item name="colorSecondary">@color/primary</item>
+        <item name="colorOnSecondary">@color/white </item>
+        <item name="android:colorBackground">@color/background</item>
+        <item name="colorSurface">@color/color3</item>
+        <item name="colorOnSurface">@color/primaryLight</item>
+    </style>
+
+    <style name="Label" parent="MaterialAlertDialog.MaterialComponents.Title.Text">
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="Label.Small">
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="Time" parent="MaterialAlertDialog.MaterialComponents.Title.Text">
+        <item name="android:textColor">@color/primaryDark</item>
+        <item name="android:textSize">40sp</item>
+    </style>
+
+    <style name="Time.Disabled" parent="Time">
+        <item name="android:textColor">@color/primaryLight</item>
+    </style>
+
+    <style name="Time.Period" parent="Time">
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="Time.Period.Disabled" parent="Time.Period">
+        <item name="android:textColor">@color/primaryLight</item>
+    </style>
+
+    <style name="Alarm.Repeat" parent="MaterialAlertDialog.MaterialComponents.Title.Text">
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="Alarm.Repeat.Disabled" parent="Alarm.Repeat">
+        <item name="android:textColor">@color/repeatDisabled</item>
+    </style>
+
+    <style name="Time.Large" parent="Time">
+        <item name="android:textSize">60dp</item>
+    </style>
+
+    <style name="Button" parent="Widget.MaterialComponents.Button.OutlinedButton">
+        <item name="android:insetTop">0dp</item>
+        <item name="android:insetBottom">0dp</item>
+        <item name="android:layout_margin">8dp</item>
+    </style>
+
+    <style name="floatingButton" parent="Widget.MaterialComponents.FloatingActionButton">
+
+    </style>
+
+    <style name="ToggleButton" parent="Widget.AppCompat.DrawerArrowToggle">
+        <item name="android:backgroundTint">@android:color/transparent</item>
+    </style>
+
+    <style name="ClockLabel" parent="MaterialAlertDialog.MaterialComponents.Title.Text">
+        <item name="android:textColor">@color/background</item>
+        <item name="android:textSize">28sp</item>
+    </style>
+
+    <style name="FabLarge" parent="Widget.MaterialComponents.FloatingActionButton">
+        <item name="fabCustomSize">72dp</item>
+        <item name="maxImageSize">48dp</item>
     </style>
 
 </resources>
